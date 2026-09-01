@@ -173,7 +173,7 @@ h1, h2, h3, h4 { overflow-wrap:break-word; }
 .b1 { width:600px; height:600px; background:rgba(26,86,219,.08); top:-200px; right:-100px; }
 .b2 { width:400px; height:400px; background:rgba(14,165,233,.06); bottom:-100px; left:-100px; }
 
-.hero-left { flex:1; min-width:0; position:relative; z-index:1; }
+.hero-left { flex:1; min-width:0; width:100%; max-width:100%; position:relative; z-index:1; }
 .hero-eyebrow {
   display:inline-flex; align-items:center; gap:.6rem;
   font-family:var(--ff-mono); font-size:.68rem; letter-spacing:2px;
@@ -404,7 +404,7 @@ h1, h2, h3, h4 { overflow-wrap:break-word; }
   display:flex; align-items:center; gap:4rem;
   max-width:100%;
 }
-.qs-left { flex:1; }
+.qs-left { flex:1; min-width:0; width:100%; max-width:100%; }
 .qs-title { margin-bottom:1.5rem; }
 .qs-display {
   display:block; font-family:var(--ff-display); font-size:clamp(4rem,8vw,7rem);
@@ -457,7 +457,7 @@ h1, h2, h3, h4 { overflow-wrap:break-word; }
   padding:.4rem 1rem; border-radius:50px;
 }
 .pop-header h2 {
-  flex:1; font-family:var(--ff-display); font-size:clamp(1.8rem,3vw,2.5rem);
+  flex:1; min-width:0; font-family:var(--ff-display); font-size:clamp(1.8rem,3vw,2.5rem);
   font-weight:800; color:white; line-height:1.1;
 }
 .pop-header h2 em { color:var(--sky); font-style:normal; }
@@ -871,7 +871,7 @@ h1, h2, h3, h4 { overflow-wrap:break-word; }
 .jurnal-item { display:flex; align-items:center; gap:1.2rem; padding:1.2rem 1.5rem; background:var(--white); border:1.5px solid var(--border); border-radius:var(--r-lg); transition:.2s; }
 .jurnal-item:hover { border-color:var(--blue); box-shadow:var(--sh); }
 .jurnal-item-icon { font-size:1.6rem; flex-shrink:0; }
-.jurnal-item-info { flex:1; }
+.jurnal-item-info { flex:1; min-width:0; }
 .jurnal-item-info strong { display:block; font-family:var(--ff-display); font-size:.88rem; font-weight:700; color:var(--dark); margin-bottom:.2rem; }
 .jurnal-item-info span { font-size:.72rem; color:var(--slate); }
 .jurnal-item-actions { display:flex; gap:.4rem; flex-shrink:0; flex-wrap:wrap; }
