@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab Teknik Tegangan Tinggi — Universitas Hasanuddin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="topbar-left">🏛️ Dept. Teknik Elektro — Fakultas Teknik — Universitas Hasanuddin</span>
+    <div class="topbar-right">
+      <span class="topbar-tag">T.A. 2025/2026</span>
+      <a href="contact.html" class="topbar-cta">Hubungi Kami →</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">
+        <img src="img/logo-t3.png" alt="Logo" style="width:100%;height:100%;object-fit:contain"/>
+        </span>
+      </div>
+      <div class="logo-text">
+        <span class="lt-main">LAB <em>TTT</em></span>
+        <span class="lt-sub">Unhas · Tegangan Tinggi</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nl-item active">Beranda</a></li>
+      <li><a href="about.html" class="nl-item">Tentang Lab</a></li>
+      <li><a href="praktikum.html" class="nl-item">Praktikum</a></li>
+      <li><a href="alat.html" class="nl-item">Alat Lab</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">
+      <span>Kontak</span>
+      <div class="nav-cta-arrow">→</div>
+    </a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Beranda</a>
+  <a href="about.html">Tentang Lab</a>
+  <a href="praktikum.html">Praktikum</a>
+  <a href="alat.html">Alat Lab</a>
+  <a href="contact.html">Kontak</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-blob b1"></div>
+  <div class="hero-blob b2"></div>
+
+  <div class="hero-left">
+    <div class="hero-eyebrow">
+      <div class="he-dot"></div>
+      <span>Laboratorium Aktif · Gowa</span>
+    </div>
+    <h1 class="hero-title">
+      <span class="ht-serif">Laboratorium</span>
+      <span class="ht-display">TEKNIK TEGANGAN</span>
+      <span class="ht-italic">Tinggi dan Infrastruktur</span>
+    </h1>
+    <p class="hero-desc">Laboratorium Teknik Tegangan Tinggi dan Infrastruktur Ketenagalistrikan — pusat riset & praktikum mahasiswa teknik elektro Unhas sejak 1998.</p>
+    <div class="hero-rating">
+      <div class="hr-label">MODUL PRAKTIKUM</div>
+      <div class="hr-num">3 Modul</div>
+    </div>
+    <div class="hero-actions">
+      <a href="praktikum.html" class="btn-pill-fill">⚡ Lihat Praktikum</a>
+      <a href="sabar_yaw_atmint_masih_sibut" class="btn-pill-outline" target="_blank">Pendaftaran →</a>    <!--LINK PENDAFTARAN-->
+    </div>
+    <!-- mini thumbnails -->
+    <div class="hero-thumbs">
+      <div class="ht-item active"><span>TTT AC</span></div>
+      <div class="ht-item"><span>TTT DC</span></div>
+      <div class="ht-item"><span>Impuls</span></div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-card-main">
+      <div class="hcm-bg"></div>
+      <div class="hcm-icon"><img src="img/logo-t3.png" alt=""/></div>
+      <div class="hcm-badge">LAB TTT UNHAS</div>
+      <div class="hcm-text">INFRASTRUKTUR<br/>KETENAGALISTRIKAN</div>
+    </div>
+    <div class="hero-float-tag ft1">
+      <span class="ft-num">25+</span>
+      <span class="ft-label">Tahun</span>
+    </div>
+    <div class="hero-float-tag ft2">
+      <span class="ft-num">50+</span>
+      <span class="ft-label">Mahasiswa/Thn</span>
+    </div>
+    <div class="hero-float-tag ft3">
+      <span class="ft-icon">🏆</span>
+      <span class="ft-label">Terakreditasi</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TABS MODUL ═══ -->
+<section class="tabs-section">
+  <div class="tabs-nav">
+    <button class="tab-btn active" data-tab="praktikum">PRAKTIKUM</button>
+    <button class="tab-btn" data-tab="dokumen">DOKUMEN</button>
+    <button class="tab-btn" data-tab="fasilitas">FASILITAS</button>
+    <button class="tab-btn" data-tab="tim">TIM LAB</button>
+  </div>
+
+  <div class="tab-content active" id="tab-praktikum">
+    <div class="modul-slider">
+      <button class="slider-arrow left" id="sliderLeft">‹</button>
+      <div class="modul-track" id="modulTrack">
+        <div class="modul-card">
+          <div class="mc-header" style="background:linear-gradient(135deg,#1a56db,#0ea5e9)">
+            <span class="mc-num">01</span><span class="mc-icon">⚡</span>
+          </div>
+          <div class="mc-body">
+            <h3>Tegangan Tinggi AC</h3>
+            <p>Pengujian dielektrik & kekuatan isolasi pada tegangan bolak-balik hingga 100 kV</p>
+            <div class="mc-tags"><span>Isolasi</span><span>Tan δ</span><span>Korona</span></div>
+            <div class="mc-actions">
+              <a href="https://drive.google.com/your-link" target="_blank" class="mc-btn">📄 Jurnal</a>
+              <a href="https://drive.google.com/your-link" target="_blank" class="mc-btn">📋 Modul</a>
+              <a href="praktikum.html#ttt-ac" class="mc-btn-outline">Detail →</a>
+            </div>
+          </div>
+        </div>
+        <div class="modul-card featured">
+          <div class="mc-header" style="background:linear-gradient(135deg,#0f4c81,#1a56db)">
+            <span class="mc-num">02</span><span class="mc-icon">🔋</span>
+          </div>
+          <div class="mc-body">
+            <h3>Tegangan Tinggi DC</h3>
+            <p>Resistivitas isolasi, PI, DAR & karakteristik arus bocor tegangan searah</p>
+            <div class="mc-tags"><span>PI Index</span><span>DAR</span><span>Megger</span></div>
+            <div class="mc-actions">
+              <a href="https://drive.google.com/your-link" target="_blank" class="mc-btn">📄 Jurnal</a>
+              <a href="https://drive.google.com/your-link" target="_blank" class="mc-btn">📋 Modul</a>
+              <a href="praktikum.html#ttt-dc" class="mc-btn-outline">Detail →</a>
+            </div>
+          </div>
+        </div>
+        <div class="modul-card">
+          <div class="mc-header" style="background:linear-gradient(135deg,#164e63,#0891b2)">
+            <span class="mc-num">03</span><span class="mc-icon">💥</span>
+          </div>
+          <div class="mc-body">
+            <h3>Tegangan Tinggi Impuls</h3>
+            <p>Surja petir 1.2/50 μs, surja hubung & koordinasi isolasi sistem tenaga</p>
+            <div class="mc-tags"><span>Marx Gen.</span><span>BIL</span><span>IEC 60060</span></div>
+            <div class="mc-actions">
+              <a href="https://drive.google.com/your-link" target="_blank" class="mc-btn">📄 Jurnal</a>
+              <a href="https://drive.google.com/your-link" target="_blank" class="mc-btn">📋 Modul</a>
+              <a href="praktikum.html#ttt-impuls" class="mc-btn-outline">Detail →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-arrow right" id="sliderRight">›</button>
+    </div>
+  </div>
+
+  <div class="tab-content" id="tab-dokumen">
+    <div class="dok-quick-grid">
+      <a href="https://drive.google.com/drive/folders/11h3C4_kPIV0cfS5aeWXMpjK6Cgg_LGz7?usp=drive_link" target="_blank" class="dqg-card">
+        <span class="dqg-icon">📄</span>
+        <div><strong>Jurnal Lengkap 3 Modul</strong><small>PDF — Google Drive — 2025/2026</small></div>
+        <span class="dqg-arrow">↗</span>
+      </a>
+      <a href="https://drive.google.com/your-link" target="_blank" class="dqg-card">
+        <span class="dqg-icon">📋</span>
+        <div><strong>Modul & Panduan Praktikum</strong><small>PDF — Google Drive — 2025/2026</small></div>
+        <span class="dqg-arrow">↗</span>
+      </a>
+      <a href="https://drive.google.com/your-link" target="_blank" class="dqg-card">
+        <span class="dqg-icon">🦺</span>
+        <div><strong>Panduan K3 Laboratorium</strong><small>PDF — Wajib sebelum praktikum</small></div>
+        <span class="dqg-arrow">↗</span>
+      </a>
+      <a href="https://drive.google.com/your-link" target="_blank" class="dqg-card">
+        <span class="dqg-icon">📊</span>
+        <div><strong>Template Laporan & Data</strong><small>DOCX/XLSX — Google Drive</small></div>
+        <span class="dqg-arrow">↗</span>
+      </a>
+      <a href="praktikum.html#kelengkapan-administrasi" class="dqg-card featured">
+        <span class="dqg-icon">📂</span>
+        <div><strong>Semua Dokumen</strong><small>Lihat Kelengkapan Administrasi Praktikum</small></div>
+        <span class="dqg-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="tab-content" id="tab-fasilitas">
+    <div class="fas-grid">
+      <div class="fas-card"><span>🔌</span><strong>HV AC Transformer</strong><small>0–100 kV | IEC 60156</small></div>
+      <div class="fas-card"><span>🌩️</span><strong>Marx Impulse Generator</strong><small>400 kV | IEC 60060</small></div>
+      <div class="fas-card"><span>🔬</span><strong>PD Analyzer</strong><small>0.1 pC | IEC 60270</small></div>
+      <div class="fas-card"><span>📏</span><strong>Digital Megger</strong><small>500V–10kV | 1 TΩ</small></div>
+      <div class="fas-card"><span>🖥️</span><strong>Relay Test Set OMICRON</strong><small>CMC 356 Series</small></div>
+      <div class="fas-card"><span>🌍</span><strong>Earth Resistance Tester</strong><small>Metode Wenner 4-probe</small></div>
+    </div>
+    <div style="text-align:center;margin-top:2rem"><a href="alat.html" class="btn-pill-outline">Lihat Semua Alat →</a></div>
+  </div>
+
+  <div class="tab-content" id="tab-tim">
+    <div class="tim-cards">
+      <div class="tim-c featured">
+        <div class="tc-ava blue">DR</div>
+        <strong>Prof. Dr. Ir. H. Salamah Manjang, MT., IPU., ASEAN Eng</strong>
+        <span>Kepala Laboratorium</span>
+        <p>Spesialis tegangan tinggi & sistem proteksi tenaga listrik</p>
+      </div>
+      <div class="tim-c">
+        <div class="tc-ava">SA</div>
+        <strong>Yuliana</strong>
+        <span>Koordinator Umum</span>
+        <p>Tegangan Tinggi AC, DC dan Impuls</p>
+      </div>
+      <div class="tim-c">
+        <div class="tc-ava">BN</div>
+        <strong>Ilmi Sukni Ramadani</strong>
+        <span>Asisten Praktikum</span>
+        <p>Tegangan Tinggi AC, DC dan Impuls</p>
+      </div>
+      <div class="tim-c">
+        <div class="tc-ava">FW</div>
+        <strong>Annisa Mutia Zainuddin</strong>
+        <span>Asisten Praktikum</span>
+        <p>Tegangan Tinggi AC, DC dan Impuls</p>
+      </div>
+      <div class="tim-c">
+        <div class="tc-ava">FW</div>
+        <strong>Muh Faiz Ihsan</strong>
+        <span>Asisten Praktikum</span>
+        <p>Tegangan Tinggi AC, DC dan Impuls</p>
+      </div>
+      <div class="tim-c">
+        <div class="tc-ava">FW</div>
+        <strong>Fadhil Sultan</strong>
+        <span>Asisten Praktikum</span>
+        <p>Tegangan Tinggi AC, DC dan Impuls</p>
+      </div>
+      <div class="tim-c">
+        <div class="tc-ava">FW</div>
+        <strong>Fahmi Husein Putrata</strong>
+        <span>Asisten Praktikum</span>
+        <p>Tegangan Tinggi AC, DC dan Impuls</p>
+      </div>
+      <div class="tim-c">
+        <div class="tc-ava">FW</div>
+        <strong>Muh Fathur Rahman</strong>
+        <span>Asisten Praktikum</span>
+        <p>Tegangan Tinggi AC, DC dan Impuls</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE QUALITY ═══ -->
+<section class="quality-section">
+  <div class="qs-left">
+    <h2 class="qs-title">
+      <span class="qs-display">KUALITAS</span>
+      <span class="qs-serif">Tak Tertandingi</span>
+    </h2>
+    <p class="qs-desc">Di Lab TTT Unhas, setiap pengujian adalah perjalanan menuju pemahaman mendalam tentang sistem tenaga listrik, memadukan standar internasional dengan kenyamanan belajar.</p>
+  </div>
+  <div class="qs-right">
+    <div class="qs-big-visual">
+      <div class="qsv-bg"></div>
+      <div class="qsv-icon">⚡</div>
+    </div>
+  </div>
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>LAB TTT UNHAS</span><span>·</span>
+      <span>TEKNIK TEGANGAN TINGGI</span><span>·</span>
+      <span>IEC STANDARDS</span><span>·</span>
+      <span>INFRASTRUKTUR KETENAGALISTRIKAN</span><span>·</span>
+      <span>UNHAS ENGINEERING</span><span>·</span>
+      <span>LAB TTT UNHAS</span><span>·</span>
+      <span>TEKNIK TEGANGAN TINGGI</span><span>·</span>
+      <span>IEC STANDARDS</span><span>·</span>
+      <span>INFRASTRUKTUR KETENAGALISTRIKAN</span><span>·</span>
+      <span>UNHAS ENGINEERING</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DOKUMENTASI PRAKTIKUM ═══ -->
+<section class="popular-section dokumentasi-section">
+  <div class="pop-header">
+    <div class="pop-tag">DOKUMENTASI</div>
+    <h2>Dokumentasi <em>Proses Praktikum</em></h2>
+    <a href="praktikum.html" class="btn-pill-outline sm">Semua Modul →</a>
+  </div>
+
+  <!-- Ganti src pada tiap <img> di bawah dengan path foto asli Anda,
+       misalnya: assets/dokumentasi/foto-01.jpg
+       Selama foto belum tersedia / gagal dimuat, slide otomatis
+       menampilkan ikon placeholder agar tampilan tetap rapi. -->
+  <div class="dok-slider" id="dokSlider">
+    <div class="dok-track" id="dokTrack">
+
+      <div class="dok-slide">
+        <div class="dok-img">
+          <img src="img/prorang2.png" alt="Pengujian Tegangan Tinggi AC" loading="lazy" draggable="false" onerror="this.closest('.dok-slide').classList.add('dok-noimg')"/>
+          <span class="dok-fallback-icon">⚡</span>
+          <div class="dok-scrim"></div>
+          <div class="dok-cap"><strong>Proses Merangkai</strong></div>
+        </div>
+      </div>
+      <div class="dok-slide">
+        <div class="dok-img">
+          <img src="img/prorang1.png" alt="Pengujian Tegangan Tinggi DC" loading="lazy" draggable="false" onerror="this.closest('.dok-slide').classList.add('dok-noimg')"/>
+          <span class="dok-fallback-icon">🔋</span>
+          <div class="dok-scrim"></div>
+          <div class="dok-cap"><strong>Proses Merangkai</strong></div>
+        </div>
+      </div>
+      <div class="dok-slide">
+        <div class="dok-img">
+          <img src="img/rut3.png" alt="Uji Tegangan Impuls" loading="lazy" draggable="false" onerror="this.closest('.dok-slide').classList.add('dok-noimg')"/>
+          <span class="dok-fallback-icon">🌩️</span>
+          <div class="dok-scrim"></div>
+          <div class="dok-cap"><strong>Respon Umum</strong></div>
+        </div>
+      </div>
+      <div class="dok-slide">
+        <div class="dok-img">
+          <img src="img/restul.png" alt="Pengukuran Partial Discharge" loading="lazy" draggable="false" onerror="this.closest('.dok-slide').classList.add('dok-noimg')"/>
+          <span class="dok-fallback-icon">🔍</span>
+          <div class="dok-scrim"></div>
+          <div class="dok-cap"><strong>Respon Tulis</strong></div>
+        </div>
+      </div>
+      <div class="dok-slide">
+        <div class="dok-img">
+          <img src="img/kontrol1.png" alt="Pengujian Sistem Proteksi" loading="lazy" draggable="false" onerror="this.closest('.dok-slide').classList.add('dok-noimg')"/>
+          <span class="dok-fallback-icon">🛡️</span>
+          <div class="dok-scrim"></div>
+          <div class="dok-cap"><strong>Proses Praktikum</strong></div>
+        </div>
+      </div>
+      <div class="dok-slide">
+        <div class="dok-img">
+          <img src="img/kontrol2.png" alt="Pengukuran Sistem Pembumian" loading="lazy" draggable="false" onerror="this.closest('.dok-slide').classList.add('dok-noimg')"/>
+          <span class="dok-fallback-icon">🌍</span>
+          <div class="dok-scrim"></div>
+          <div class="dok-cap"><strong>Panel Kontrol Rangkaian</strong></div>
+        </div>
+      </div>
+      <div class="dok-slide">
+        <div class="dok-img">
+          <img src="img/T3.22.png" alt="Sesi Asistensi Laporan" loading="lazy" draggable="false" onerror="this.closest('.dok-slide').classList.add('dok-noimg')"/>
+          <span class="dok-fallback-icon">📝</span>
+          <div class="dok-scrim"></div>
+          <div class="dok-cap"><strong>T3 dan Infrastruktur 2022</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BRANCHES (lokasi & info) ═══ -->
+<section class="branches-section">
+  <div class="br-sidebar">
+    <div class="brs-vertical-text">INFO LABORATORIUM</div>
+  </div>
+  <div class="br-content">
+    <div class="br-cards">
+      <div class="br-card">
+        <div class="brc-map-placeholder">🗺️</div>
+        <div class="brc-info">
+          <strong>Gedung Teknik Elektro</strong>
+          <p>Lt. 2 — Kampus Unhas Bontomarannu, Gowa 92171</p>
+        </div>
+      </div>
+      <div class="br-card">
+        <div class="brc-map-placeholder">📞</div>
+        <div class="brc-info">
+          <strong>Kontak Lab</strong>
+          <p>+62 411-587-032 · labtegangantinggiunhas@gmail.com</p>
+        </div>
+      </div>
+      <div class="br-card">
+        <div class="brc-map-placeholder">🕐</div>
+        <div class="brc-info">
+          <strong>Jam Operasional</strong>
+          <p>Senin – Jumat · 08.00 – 16.00 WITA</p>
+        </div>
+      </div>
+      <div class="br-card">
+        <div class="brc-map-placeholder">📅</div>
+        <div class="brc-info">
+          <strong>Pendaftaran Praktikum</strong>
+          <p>Via portal akademik Unhas · T.A. 2025/2026</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:1.5rem">
+      <a href="contact.html" class="btn-pill-fill">LEBIH LANJUT →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE BOTTOM ═══ -->
+<div class="marquee-dark">
+  <div class="md-track">
+    <span>LAB TTT</span><span>·</span><span>UNHAS</span><span>·</span>
+    <span>LAB TTT</span><span>·</span><span>UNHAS</span><span>·</span>
+    <span>LAB TTT</span><span>·</span><span>UNHAS</span><span>·</span>
+    <span>LAB TTT</span><span>·</span><span>UNHAS</span><span>·</span>
+    <span>LAB TTT</span><span>·</span><span>UNHAS</span><span>·</span>
+    <span>LAB TTT</span><span>·</span><span>UNHAS</span><span>·</span>
+  </div>
+</div>
+
+<!-- ═══ CONTACT SECTION ═══ -->
+<section class="contact-split">
+  <div class="cs-right">
+    <div class="csr-card">
+      <h3>TERIMA KASIH!</h3>
+      <p>Kami siap membantu setiap pertanyaan seputar praktikum dan kegiatan lab.</p>
+      <div class="csr-arrow">→</div>
+    </div>
+    <div class="csr-info">
+      <div class="csi-item">📧 labtegangantinggiunhas@gmail.com</div>
+      <div class="csi-item">📞 +62 411-587-032</div>
+      <div class="csi-item">📍 Gedung Teknik Elektro Lt. 2, Unhas</div>
+    </div>
+  </div>
+
+  <a href="https://maps.app.goo.gl/htpgpmNvAdJ8Mjya7" target="_blank" rel="noopener" class="cs-map">
+    <div class="cs-map-inner">
+      <iframe src="https://www.google.com/maps?q=Gedung+Teknik+Elektro+Unhas+Gowa&output=embed" loading="lazy"></iframe>
+      <span class="cs-map-badge">📍 Buka di Google Maps →</span>
+    </div>
+  </a>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="fi-brand">
+      <div class="logo" style="margin-bottom:1rem">
+        <div class="logo-mark"><span class="lm-bolt">⚡</span></div>
+        <div class="logo-text">
+          <span class="lt-main" style="color:white">LAB <em>TTT</em></span>
+          <span class="lt-sub" style="color:#64748b">Unhas · Tegangan Tinggi</span>
+        </div>
+      </div>
+      <p>Lab Teknik Tegangan Tinggi dan Infrastruktur Ketenagalistrikan — Dept. Teknik Elektro, FT Unhas.</p>
+      <div class="fi-socials">
+        <a href="#">WA</a><a href="#">IG</a><a href="#">✉</a>
+      </div>
+    </div>
+    <div class="fi-col">
+      <h4>NAVIGASI</h4>
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang Lab</a>
+      <a href="praktikum.html">Praktikum</a>
+      <a href="alat.html">Alat Lab</a>
+        </div>
+    <div class="fi-col">
+      <h4>MODUL</h4>
+      <a href="praktikum.html#ttt-ac">Tegangan Tinggi AC</a>
+      <a href="praktikum.html#ttt-dc">Tegangan Tinggi DC</a>
+      <a href="praktikum.html#ttt-impuls">Tegangan Impuls</a>
+    </div>
+    <div class="fi-col subscribe">
+      <h4>INFO UPDATE</h4>
+      <p>Dapatkan info jadwal & pengumuman terbaru lab.</p>
+      <div class="sub-form">
+        <input type="email" placeholder="Gabung Grup WA"/>
+        <button>→</button>
+      </div>
+      <small>Bergabunglah untuk mendapatkan info update dari Lab TTT Unhas.</small>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="fb-watermark">KONTAK</div>
+    <div class="fb-bar">
+      <span>© 2025 Lab Teknik Tegangan Tinggi — Universitas Hasanuddin</span>
+      <div class="fb-links"><a href="#">Privasi</a><a href="#">Sitemap</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
